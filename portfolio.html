@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portfolio van Thomas Diephuis">
+    <meta property="og-title" content="Thomas Diephuis - Portfolio">
+    <title>Thomas Diephuis - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <main> 
-    <h1>Thomas Diephuis</h1>
+   <header> 
+    <h1>
+      Thomas Diephuis
+      <svg viewBox="0 0 100 100" width="50" height="50">
+      <circle cx="50" cy="50" r="20" fill="lightblue" />
+      </svg>
+    </h1>
     <p>Ik ben Thomas, 43, Nederland, Alkmaar.</p>
     <nav>
-      <a href="#over-mij">Over mij</a>
-      <a href="#projecten">Projecten</a>
-      <a href="contact">Contact</a>
-      <a title="Mijn GitHub" href="https://github.com/tdiephuis/tdiephuis.github.io" target="_blank" rel="noopener">GitHub</a>  
+      <a class="nav-link" href="#over-mij">Over mij</a>
+      <a class="nav-link" href="#projecten">Projecten</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" title="Mijn GitHub" href="https://github.com/tdiephuis/tdiephuis.github.io" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>  
     </nav>
+    </header>
+
+    <main>
     <section class="pagina-sectie" id="over-mij">
       <figure>
-        <img src="me_thomas.jpg.jpg">
+        <img class="profile-picture" src="me_thomas.jpg.jpg" alt="Thomas Diephuis">
         <figcaption>Bij ICT vanaf Morgen / Softpool in 2026</figcaption>
         <h2>Over mij</h2>
+        <video controls>
+          <source type="video/mp4">
+          <source type="video/webm">
+          Uw browser ondersteunt deze video niet.
+        </video>
         <p>
            Zolang ik mij kan herinneren hebben twee dingen mij geboeid: Hoe dingen werken; en vanuit niets, iets maken, zowel op technisch als kunstzinnig vlak.<br>
            Dat zie je terug in mijn hobby's: Ik sleutel, maak graag beeldende kunst, (electronische) muziek en ik ben amateur-horlogemaker.<br> 
@@ -30,7 +46,7 @@
            Al snel ontdekte ik hoe <strong>leuk</strong> het was om dingen aan te passen in spellen, levels te bouwen en graphics te maken/veranderen.<br>
            Van een familielid kreeg ik een oude (Anno 2026: "vintage"..) MSX computer met het ingebouwde MSX-Basic, dat was een van mijn eerste kennismakingen met programmeren.<br>
            Een tijd was ik niet achter de computer(s) weg te slaan, maar uiteindelijk heb ik er niet mijn werk van gemaakt, tegen de adviezen van mijn vader in.. (Sorry pap!)<br>
-           In 2026, na een periode ziek thuis te hebben gezeten van werk wat geen voldoening gaf, ben ik daar op 43-jarige leeftijd op terug gekomen. Oude liefde roest niet!<br>           
+           In 2026, na een periode ziek thuis te hebben gezeten van werk wat geen voldoening gaf, ben ik daar op 43-jarige leeftijd op terug gekomen.<br>           
         </p>
       </figure>
       <h2>Vaardigheden</h2>
@@ -38,7 +54,7 @@
         <li data-niveau="basis">HTML</li>
         <li data-niveau="basis">CSS</li>
         <li data-niveau="basis">Git</li>
-        <li data-niveau="ervaren">Werken in teamverband</li>
+        <li data-niveau="ervaren">Samenwerken</li>
       </ul>
       <table>
         <caption>Voortgang per niveau</caption>
@@ -51,6 +67,7 @@
         </tbody>
       </table>
     </section>
+
     <section class="pagina-sectie" id="projecten">
       <div class="project-kaart">
         <h3>Project 1: Mijn Portfolio</h3>
@@ -65,6 +82,7 @@
         <p>Portfolio voorzien van interactiviteit middels <span class="badge">JavaScript</span>.</p>
       </div>
     </section>
+
     <section class="pagina-sectie" id="contact">
       <h3>Mijn contactgegevens</h3>
       <dl>
@@ -75,7 +93,26 @@
         <dt>Telefoon:</dt>
         <dd>+3146383308</dd>
       </dl>
+      <form>
+        <fieldset>
+          <legend>Maak contact</legend>
+          <label for="naam">Naam</label>
+          <input id="naam" type="text" name="naam" required />
+          <label for="email">E-mail</label>
+          <input id="email" type="email" name="email" required />
+          <label for="onderwerp">Onderwerp</label>
+          <select id="onderwerp">
+            <option>Vraag</option>
+            <option>Anders</option>
+          </select>
+          <label for="bericht">Bericht</label>
+          <textarea id="bericht" name="bericht" required></textarea>
+          <button type="submit">Verstuur</button>
+        </fieldset> 
+      </form>
     </section>
+
+    <footer>© 2026</footer>
    </main>         
 </body>
 </html>

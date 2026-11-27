@@ -1,0 +1,49 @@
+.nav-link {
+    background-color: #ceded7;
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid #34453d;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #34453d;
+    color: #ceded7;
+}
+
+.nav-link:focus {
+    color: rgba(255, 173, 102) ;
+    background-color: #34453d;
+}
+
+img.profile-picture {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+html {
+    background-color: #ceded7;
+    color: #34453d;
+}
+
+.project-kaart {
+    background-color: rgba(255, 173, 102);
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #34453d;
+    border-radius: 10px;
+}
+
+.pagina-sectie {
+    padding: 5px;
+    margin: 15px;
+    border: 1px solid #34453d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
